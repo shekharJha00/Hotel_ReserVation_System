@@ -1,17 +1,23 @@
 package com.bridgelabz;
-
 public class HotelReservation {
-    public static void main(String[] args) {
 
-        System.out.println("--Welcome to Hotel Reservation Program--");
-        Hotels hotel1=new Hotels("lakewood",110);
-        Hotels hotel2=new Hotels("bridgewood",160);
-        Hotels hotel3=new Hotels("ridgewood",160);
-        System.out.println(hotel1);
-        System.out.println(hotel2);
-        System.out.println(hotel3);
-        
+    public static void main(String[] args) {
+        HotelReservationSystem hotel = new HotelReservationSystem();
+
+        System.out.println("--Welcome to Hotel Rates Program--");
+        System.out.println(" ");
+
+        hotel.addHotel();
+        hotel.showHotelInfo();
+
+        System.out.println(" ");
+        System.out.println("Cheapest Hotel Based on RegularRate");
+        hotel.cheapestHotel("10-Sep-2020", "11-Sep-2020");
+        System.out.println(" ");
+
     }
 
 }
+
+
 
